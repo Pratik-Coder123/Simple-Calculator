@@ -19,13 +19,14 @@ let del=()=>{
 
 
 let Result=()=>{
-
+if(result.value){
     try {
         result.value=eval(result.value);
     } catch (error) {
         // alert("Please provide valid input") ;
          result.value="Invalid Operation"
     }
+}
 }
 
 
